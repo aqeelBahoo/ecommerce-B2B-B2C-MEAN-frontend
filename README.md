@@ -23,6 +23,4 @@ Now you can ready to go
 If you want to see the mock api on your browser you can hit the link: http://localhost:3000/
 
 If you want to learn more on mock API you can go through the doc https://www.npmjs.com/package/json-server
-
-# Project Documentation: 
-https://docs.google.com/document/d/1NdB3SdAbKSFcPooap-ddpHdQQxBDvAieH2bPF4NCLMU/edit?usp=sharing
+ 
