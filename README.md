@@ -10,14 +10,10 @@ Ecommerce portal where some of the user(Seller) who want to sell the product and
 
 **Step 4:** ``` npm install ```
 
-**Step 5:** ``` npm install -g json-server ``` (Install JSON mock server)
-
 
 **Step 6:** Open two terminal/command prompt  
 
 **Step 6.1:** In one run command:   ``` ng serve ```
-
-**Step 6.2:** Another one run command:  ``` json-server --watch mock-api-data.json ```
 
 
 Now you can ready to go 
