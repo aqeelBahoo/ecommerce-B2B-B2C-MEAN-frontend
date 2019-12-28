@@ -1,0 +1,62 @@
+<br>
+<div class="row">
+  <div class="col-md-3">
+    <h4> Products Sold List</h4>
+  </div>
+  <div class="col-md-3">
+    <h4>Grand Total {{grandTotal}}</h4>
+  </div>
+
+  <!-- <div class="col-md-3">
+    <div class="form-group">
+      <label for="productStatus">Get Orders</label>
+      <select class="form-control" (change)="getOrders($event.target.value)">
+        <option value="all">All</option>
+        <option value="today">Today Orders</option>
+        <option value="week">This Week Orders</option>
+        <option value="month">This Month Orders</option>
+      </select>
+
+    </div>
+  </div> -->
+  <!-- <div class="col-md-3" *ngIf="user_role == 'admin' || user_role == 'seller'">
+    <button type="button" class="btn btn-dark" (click)="print()">
+      Print Order
+    </button>
+  </div> -->
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product Id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product image</th>
+      <th scope="col">DP</th>
+      <th scope="col">Sold Count</th>
+      <th scope="col">Total</th>
+      <!-- <th scope="col">Display Image</th> -->
+      <!-- <th scope="col">Description</th> -->
+      <!--  <th scope="col" *ngIf="user_role !== 'buyer'">Action</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product_data of all_product_data; let i= index"
+      class="curor-pointer"
+      data-toggle="modal" data-target="#addEditProductModal"
+      aria-hidden="true">
+      <th scope="row">{{i+1}}</th>
+      <td>{{product_data._id}}</td>
+      <td>{{product_data.name}}</td>
+      <td>
+        <img [src]="product_data.uploadPhoto" alt="product image"
+          width="200">
+      </td>
+      <td>{{product_data.dp}}</td>
+      <td>{{product_data.count}}</td>
+      <td>{{product_data.totalAmount}}</td>
+      <td> </td>
+    </tr>
+  </tbody>
+
+</table>
